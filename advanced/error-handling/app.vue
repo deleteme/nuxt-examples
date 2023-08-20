@@ -24,6 +24,9 @@ function triggerError () {
         <NuxtLink to="/other" class="n-link-base">
           Other
         </NuxtLink>
+        <NuxtLink to="/secret" class="n-link-base">
+          403
+        </NuxtLink>
         <NuxtLink to="/404" class="n-link-base">
           404
         </NuxtLink>
@@ -38,7 +41,7 @@ function triggerError () {
         </button>
       </nav>
     </template>
-
+    <NuxtPage />
     <template #footer>
       <div class="text-center p-4 op-50">
         Current route: <code>{{ route.path }}</code>
